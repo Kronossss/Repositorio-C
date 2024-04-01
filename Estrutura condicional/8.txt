@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+
+float salario,aumento10,aumento30,salariomaior;   
+
+printf ("Digite o valor do seu salario : \n");
+
+scanf ("%f", &salario);
+
+aumento10 = salario/10;
+
+aumento30 = aumento10*3;
+
+salariomaior = salario+aumento30;
+
+
+if(salario>=2000)
+
+printf("Não vai ser modificado, se fodeu");
+
+else
+
+printf("Parabéns você recebeu um aumento, seu novo salario é :=%.2f\n",salariomaior);
+
+return(0)
+}

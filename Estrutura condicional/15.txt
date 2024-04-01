@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main (void)
+{
+	int i,g,o,r,t,z;
+	printf("Digite o seu salário : ");
+	scanf("%i",&i);
+	g=i/10;
+	o=g/2;
+	r=g+o;
+	t=g*2;
+	z=g*5;
+	
+	if (i<3000){
+	    printf(" Seu novo salário é : %i",i+z);
+	}
+	else if ((i<=3000)&&(i<10000)){
+	    printf(" Seu novo salário é : %i", i+t);
+	}
+	else
+	printf("Seu novo salário é : %i",i+r);
+
+	return(0);
+}

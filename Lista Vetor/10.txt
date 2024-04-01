@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[5][5],r,i,t,a;
+    a=0;
+    printf("Digite um número para ser comparado : ");
+    scanf("%i",&i);
+    for(r=0; r<5; r++){
+    for(t=0; t<5; t++){
+    printf("Digite o valor da linha %i coluna %i : ",r+1,t+1);
+    scanf("%i",&A[r][t]);
+    if(A[r][t]==i){
+      a+=1;  
+    }
+    }
+    }
+       printf("A quantidade de números iguais ao comparado é : %i",a);
+    
+    return (0);
+}

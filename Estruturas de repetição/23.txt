@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+int A[31],i,g,o,r;
+o=0;
+r=0;
+for(i=0; i<31; i++){
+    printf("Digite a temperatura do dia %i : ",i+1);
+    scanf("%i",&A[i]);
+    if(A[i]<=22){
+        o+=1;
+    }
+    else{
+        r+=1;
+    }
+}
+printf("Esse foi o número de dias com temperatura menor ou igual a 22 graus : %i  \n",o);
+printf("Esse foi o número de dias com temperatura maior que 22 graus : %i ",r);
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[20],i,g,B[20];
+    printf("Digite a variável : ");
+    scanf("%i",&g);
+    for (i=0; i<20; i++){
+    printf("Digite o %iº número do vetor : ",i+1);
+    scanf("%i",&A[i]);
+    }
+    for (i=0; i<20; i++){
+       printf("%iº valor do vetor é : %i \n",i+1,A[i]*g);
+    }
+    return (0);

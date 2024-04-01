@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[20],i,g,o;
+    for (i=0; i<20; i++){
+       printf("Digite o %iº número do vetor : ",i+1);
+       scanf("%i",&A[i]);
+    }
+    o=A[0];
+    for(i=1; i<20; i++){
+    if(o>A[i]){
+        o=A[i];
+        g=i;
+    }
+    }
+    printf("Esse é o menor número no vetor : %i\n",o);
+    printf("Essa é a sua posição no vetor : %i",g+1);
+   
+
+    return (0);
+}

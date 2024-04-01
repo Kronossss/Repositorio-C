@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+int i,g;
+printf("Digite o total da sua compra :  ");
+scanf("%i", &i);
+g=i/10;
+if(i<=100){
+    printf(" Você tem direito a um cupom ");}
+    else
+    printf(" Você tem direito a dois cupons e %i reais de desconto : \n",g);
+    return(0);
+}

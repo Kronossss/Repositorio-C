@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+
+int nota1,media,nota2;
+
+printf("Digete sua nota na primeira prova :\n");
+
+scanf("%i", &nota1);
+
+nota2= 12-nota1;
+
+if (nota2<=10)
+
+printf("A nota necessária é :=%i\n", nota2);
+
+else
+
+printf("ja está na prova final, se fodeu");
+
+return(0);
+
+}

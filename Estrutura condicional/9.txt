@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+int i,g,o,r;
+printf("Digite o seu faturamento anual : \n");
+scanf("%i", &i);
+g=i/10;
+o=g/2;
+r=g+o;
+if(i<=100000.00){
+    printf("O valor do ICMS devido é : %i\n",g);}
+    else
+    printf("O valor do ICMS devido é : %i\n",r);
+    
+return(0);
+}

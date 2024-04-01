@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o,r;
+    printf("Digite um número : ");
+    scanf("%i", &i);
+    printf("Digite outro número : ");
+    scanf("%i", &g);
+    o=i+g;
+    printf("Digite a soma dos dois números digitados : ");
+    scanf("%i", &r);
+    
+    if(o==r){
+        printf("Parabéns você conseguiu");
+    }
+    else
+    printf(" A soma certa é : %i",o);
+
+    return 0;
+}

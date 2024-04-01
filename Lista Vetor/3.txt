@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[20],i,B[20];
+    for (i=0; i<20; i++){
+       printf("Digite o %iº número do vetor : ",i+1);
+       scanf("%i",&A[i]);
+       B[i]=A[i];
+    }
+    for (i=0; i<20; i++){
+        if(A[i]==0){
+        B[i]=1;   
+        }
+    }
+    for(i=0; i<20; i++){
+        printf("%iª elemento do 1º vetor : %i \n",i+1,A[i]);
+    }
+    for(i=0; i<20; i++){
+        printf("%iª elemento do 2º vetor : %i \n",i+1,B[i]);
+    }
+   
+
+    return (0);
+}

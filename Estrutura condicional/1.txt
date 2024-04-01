@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    float i,g;
+    printf("Digite um número : ");
+    scanf("%f",&i);
+    g=1.0/i;
+    printf("Esse é o inverso do número : %.7f",g);
+
+    return (0);
+}

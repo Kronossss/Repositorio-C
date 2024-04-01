@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main (void)
+{
+	int i;
+	printf("Digite o seu peso : ");
+	scanf("%i",&i);
+
+	
+	if (i<50){
+	    printf(" Palha");
+	}
+	else if (i<59){
+	    printf(" Pluma");
+	}
+	else if (i<75){
+	    printf(" Leve");
+	}
+		else if (i<87){
+	    printf(" Pesado ");
+	}
+	else
+	printf("Super Pesado");
+	return(0);
+}

@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x86",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/MinGW/include",
+        "C:/MinGW/lib/gcc/mingw32/4.9.3/include/c++",
+        "C:/MinGW/lib/gcc/mingw32/4.9.3/include/c++/mingw32",
+        "C:/MinGW/lib/gcc/mingw32/4.9.3/include/c++/backward",
+        "C:/MinGW/lib/gcc/mingw32/4.9.3/include",
+        "C:/MinGW/lib/gcc/mingw32/4.9.3/include-fixed"
+      ],
+      "compilerPath": "C:/MinGW/bin/gcc.exe",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x86",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}

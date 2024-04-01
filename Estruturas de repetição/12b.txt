@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g;
+    for(i=5; i<=50; i++){
+        g+=i*i;
+    }
+    printf("A soma é : %i",g);
+    
+
+    return (0);
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[20],i;
+    for (i=0; i<20; i++){
+       printf("Digite o %iº número do vetor : ",i+1);
+       scanf("%i",&A[i]);
+    }
+    for (i=0; i<20; i++){
+        if(A[i]>0){
+            printf("%i\n",A[i]);
+        }
+    }
+   
+
+    return 0;
+}

@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main (void)
+{
+	float i,g,o,r,a,l;
+	printf("Digite um número : ");
+	scanf("%f",&i);
+	printf("Digite outro número : ");
+	scanf("%f",&g);
+	printf("Digite outro número : ");
+	scanf("%f",&o);
+	r=i;
+	a=g;
+	l=o;
+	if(g>r){
+	    a=r;
+	    r=g;}
+	  if (o<a){
+	        l=o;
+	}
+	if(o>g){
+	    a=o;
+	    l=g;
+	}
+	if(a>r){
+	    r=o;
+	    a=i;
+	}
+	 printf("Essa é a ordem crescente dos números : %.2f %.2f %.2f",r,a,l);
+return(0);
+}

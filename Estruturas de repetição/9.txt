@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g;
+    i=9;
+    for(g=0; g<=10; g++){
+    printf("9 x %i = %i",g,i*g);
+    printf("\n");
+    }
+    
+    return (0);
+}

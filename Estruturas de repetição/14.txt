@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o,r,A[9999],l;
+    for(i=0; i!=9999; i++){
+      printf("Digite o %iº numero da lista, a lista terminará quando o número 9999 for digitado : ",i+1);
+      scanf("%i",&A[i]);
+      g+=1;
+      o=A[i];
+      r+=A[i];
+      if(o==9999){
+      i=9998;}
+    }
+    for(i=0; i<g; i++){
+        printf("%iº número digitado foi : %i \n",i+1,A[i]);
+    }
+    l=r/g;
+    printf("A média aritmética dos números lidos é : %i\n",l);
+return(0);
+}

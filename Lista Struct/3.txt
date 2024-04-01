@@ -1,0 +1,35 @@
+struct Ponto{
+int x[5];
+int y[5];
+};
+
+#include <stdio.h>
+
+int main()
+{
+    struct Ponto PontoA;
+   
+    float dist[4],menor;
+    int i,g;
+    for(i=0; i<5; i++){
+        printf("Digite a coordenada X do %iB: ponto : ",i+1);
+        scanf("%i",&PontoA.x[i]);
+        printf("Digite a coordenada Y do %iB: ponto : ",i+1);
+        scanf("%i",&PontoA.y[i]);
+    }
+
+    dist[0] = sqrt( pow (PontoA.x[1] - PontoA.x[0], 2) + pow (PontoA.y[1] - PontoA.y[0], 2));
+    dist[1] = sqrt( pow (PontoA.x[2] - PontoA.x[0], 2) + pow (PontoA.y[2] - PontoA.y[0], 2));
+    dist[2] = sqrt( pow (PontoA.x[3] - PontoA.x[0], 2) + pow (PontoA.y[3] - PontoA.y[0], 2));
+    dist[3] = sqrt( pow (PontoA.x[4] - PontoA.x[0], 2) + pow (PontoA.y[4] - PontoA.y[0], 2));
+    menor=dist[0];
+    g=2;
+    for(i=1; i<4; i++){
+        if(menor>dist[i]){
+            menor=dist[i];
+            g=i+2;
+        }
+    }
+    printf("O %iº ponto é o mais próximo",g);
+    return 0;
+}

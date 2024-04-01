@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    float i,g,o,r;
+    for(i=2; i<=100; i++){
+        g+=(1/i);
+        i+1;
+        g=g*-1;
+    }
+    g+=1;
+    printf("%.2f",g);
+    return 0;
+}

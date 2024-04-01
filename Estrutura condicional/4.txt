@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+int i,g;
+printf("Digite um número : \n");
+scanf("%i", &i);
+printf("Digite outro número : \n");
+scanf("%i", &g);
+if(i>g){
+    printf("O primeiro número é maior");}
+    else{
+    printf("O segundo número é maior");
+}
+return(0);
+}
+ntf("O primeiro número é maior");}
+    else{
+    printf("O segundo número é maior");
+}
+return(0);
+}

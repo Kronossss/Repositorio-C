@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int main()
+
+{
+
+int num;
+
+
+printf (" Digite um numero ");
+
+scanf ("%i",&num);
+
+if(num >= 0)
+
+{
+
+printf ("Positivo");
+
+}
+
+else 
+
+printf ("Negativo");
+
+return (0);
+
+}

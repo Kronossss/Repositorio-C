@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[5][5],r,i,t,a,c,s,z,x;
+    x=4;
+    t=0;
+    a=0;
+    c=0;
+    s=0;
+    z=0;
+    for(r=0; r<5; r++){
+        for(i=0; i<5; i++){
+         printf("Digite o valor da linha %i coluna %i : ",r+1,i+1);
+         scanf("%i",&A[r][i]);
+         a+=A[r][i];
+        }
+    }
+    for(r=0; r<5; r++){
+    t+=A[3][r];
+    }
+    for(r=0; r<5; r++){
+        c+=A[r][1];
+    }
+    for(r=0; r<5; r++){
+        s+=A[r][r];
+    }
+    for(r=0; r<5; r++){
+        z+=A[r][x];
+        x--;
+    }
+    for(r=0; r<5; r++){
+        for(i=0; i<5; i++){
+         printf("Valor da linha %i coluna %i : %i \n",r+1,i+1,A[r][i]);
+        }
+    }
+    printf("Soma da quarta linha : %i\n",t);
+    printf("Soma da 2 coluna : %i\n",c);
+    printf("Soma da diagonal principal : %i \n",s);
+    printf("Soma da diagonal secundária : %i \n",z);
+    return (0);
+}

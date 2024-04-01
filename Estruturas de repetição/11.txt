@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    float i,g,o;
+    for(i=0; i<10; i++){
+    printf("Digite a %.0f: nota : ",i+1);
+    scanf("%f",&g);
+    o+=g;}
+    o=o/10;
+    printf("Essa é a média : %.1f",o);
+
+    return (0);
+}

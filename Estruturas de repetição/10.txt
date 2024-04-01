@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o;
+    for(i=0; i<30; i++){
+    printf("Digite um número : ");
+    scanf("%i",&g);
+    o+=g;}
+    o=o/30;
+    printf("Essa é a média dos números : %i",o);
+
+    return (0);
+}

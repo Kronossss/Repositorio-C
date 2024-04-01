@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main (void)
+{
+	int i,g,o,r;
+	printf("Digite o faturamento mensal : ");
+	scanf("%i",&i);
+	printf("Digite o total das despesas  : ");
+	scanf("%i",&g);
+	o=i-g;
+	r=(o/10)*4;
+	if(o>3000){
+	    printf (" Você deve retirar : %i reais",r);
+	}
+	else
+	printf("Você deve retirar 1000 reais");
+	return(0);
+}

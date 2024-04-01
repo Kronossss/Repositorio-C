@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+
+int main ()
+
+{
+
+int num, dif;
+
+
+printf ("Digite o seu ano de nascimento \n");
+
+scanf ("%i", &num);
+
+
+dif=2018-num;
+
+
+if (dif>=18)
+
+{
+
+printf ("Maior de idade");
+
+}
+
+else
+
+printf ("Menor de idade");
+
+
+return(0);
+
+}

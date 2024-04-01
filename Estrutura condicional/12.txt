@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+int i,g,o;
+printf("Digite o seu total de vendas :");
+scanf("%i", &i);
+g=i/10;
+o=g/2;
+if (i>3000){
+    printf(" Voce tem direito a uma comissão de %i reais.",o);}
+    else
+    printf("Voce não tem direito  a comissão");
+    return(0);
+    
+}

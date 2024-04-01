@@ -1,0 +1,32 @@
+struct Cid{
+int idade[500],sexo[500],filhos[500];
+float salario[500];
+};
+
+#include <stdio.h>
+
+int main()
+{
+    struct Cid Hab;
+    int i;
+    float Med;
+    Med=0;
+    for(i=0; i<500; i++){
+    printf("Digite a sua idade : ");
+    scanf("%i",&Hab.idade[i]);
+    printf("Digite 1 para masculino 2 para feminino : ");
+    scanf("%i",&Hab.sexo[i]);
+        while((Hab.sexo[i]<=0)||(Hab.sexo[i]>2)){
+            printf("Número inserido inválido");
+        printf("Digite 1 para masculino 2 para feminino");
+        scanf("%i",&Hab.sexo[i]);
+    }
+    printf("Digite o seu salário : ");
+    scanf("%f",&Hab.salario[i]);
+    Med+=Hab.salario[i];
+    printf("Digite o número de filhos :");
+    scanf("%i",&Hab.filhos[i]);
+    }
+    printf("A média salarial é de : %.2f",Med/(float)500);
+    return 0;
+}

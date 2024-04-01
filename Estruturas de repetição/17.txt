@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o;
+    o=1;
+    printf("Digite quantos números você vai querer na sequência : ");
+    scanf("%i",&i);
+    printf("Valores : %i\n",o);
+    for(g=1; g<i; g++){
+        o+=g+1;
+        printf("Valores : %i \n",o);
+    }
+ 
+    return(0);
+}

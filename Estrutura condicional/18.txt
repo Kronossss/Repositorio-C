@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main (void)
+{
+	float i,g,o,r;
+	printf("Digite um número : ");
+	scanf("%f",&i);
+	printf("Digite outro número : ");
+	scanf("%f",&g);
+	printf("Digite outro número : ");
+	scanf("%f",&o);
+	r=i;
+	if(g<r){
+	    r=g;
+	}
+	if(o<r){
+	    r=o;
+	}
+printf(" Esse é o menor valor digitado : %f",r);
+return(0);
+}

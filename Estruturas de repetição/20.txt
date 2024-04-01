@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,a;
+    printf("Digite o número do qual você quer saber o fatorial : ");
+    scanf("%i",&i);
+    a=i;
+    for(i=i; i>1; i--){
+    a=a*(i-1);}
+    printf("Esse é o fatorial do número : %i",a);
+
+    return (0);
+}

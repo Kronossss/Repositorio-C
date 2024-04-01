@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(void)
+{
+int i,g,o,r;
+printf("Digite o valor de um lado do triângulo : ");
+scanf("%i",&i);
+printf("Digite o  valor do outro lado do triângulo : ");
+scanf("%i",&g);
+printf("Digite o  valor do outro lado do triângulo : ");
+scanf("%i",&o);
+if((i+g>o)&&(g+o>i)&&(o+i>g)){
+    
+if((i==g)&&(g==o)){
+    printf("Triângulo Equilátero");
+}
+else if((i==g)&&(i!=o)){
+    printf("Triângulo isósceles");
+}
+else if ((g==o)&&(g!=i)){
+    printf("Triângulo isósceles");
+}
+else if ((i==o)&&(i!=g)){
+    printf("Triângulo isósceles");
+}
+else if((i!=o)&&(i!=g)&&(o!=g)){
+    printf("Triângulo escaleno");}
+}
+else{
+    printf("Não é possivel criar um triângulo");
+}
+
+ return (0);
+}

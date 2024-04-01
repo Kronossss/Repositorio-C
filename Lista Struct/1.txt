@@ -1,0 +1,50 @@
+struct Ponto{
+int x;
+int y;
+};
+
+#include <stdio.h>
+
+int main()
+{
+    struct Ponto PontoA;
+    struct Ponto PontoB;
+    struct Ponto PontoC;
+    
+    printf("Digite a coordenada X do ponto A : ");
+    scanf("%i",&PontoA.x);
+    printf("Digite a coordenada X do ponto B : ");
+    scanf("%i",&PontoB.x);
+    printf("Digite a coordenada Y do ponto A : ");
+    scanf("%i",&PontoA.y);
+    printf("Digite a coordenada Y do ponto B : ");
+    scanf("%i",&PontoB.y);
+    
+    while(PontoA.x>PontoB.x){
+    printf("Erro, o X do ponto A é maior que o X do ponto B\n");
+    printf("Digite a coordenada X do ponto A, ela deverá ser menor que a Coordenada X do ponto B : ");
+    scanf("%i",&PontoA.x);
+    printf("Digite a coordenada X do ponto B, ela deverá ser maior que a coordenada X do ponto A : ");
+    scanf("%i",&PontoB.x);
+    }
+    while(PontoA.y>PontoB.y){
+    printf("Erro, o Y do ponto A é maior que o Y do ponto B\n");    
+    printf("Digite a coordenada Y do ponto A, ela deverá ser menor que a Coordenada Y do ponto B : ");
+    scanf("%i",&PontoA.y);
+    printf("Digite a coordenada Y do ponto B, ela deverá ser maior que a coordenada Y do ponto X : ");
+    scanf("%i",&PontoB.y);
+    }
+    printf("Digite a coordenada X de um ponto P para descobrir se ele está dentro do retângulo : ");
+    scanf("%i",&PontoC.x);
+    printf("Digite a coordenada Y de um ponto P para descobrir se ele está dentro do retângulo : ");
+    scanf("%i",&PontoC.y);
+    if((PontoC.x>=PontoA.x)&&(PontoC.x<=PontoB.x)&&(PontoC.y>=PontoA.y)&&(PontoC.y<=PontoB.y)){
+        printf(" O ponto P está dentro do retângulo ");
+    }
+    else{
+        printf("O ponto P  não está dentro do retângulo");
+    }
+    
+
+    return 0;
+}

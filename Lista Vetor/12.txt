@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[6][6],B[36],r,i,t,a;
+    printf("Digite um número : ");
+    scanf("%i",&a);
+    t=0;
+    for(r=0; r<6; r++){
+        for(i=0; i<6; i++){
+         printf("Digite o valor da linha %i coluna %i : ",r+1,i+1);
+         scanf("%i",&A[r][i]);
+         B[t]=A[r][i]*a;
+         t++;
+        }
+    }
+    for(r=0; r<36; r++){
+        printf("%iº valor : %i\n",r+1,B[r]);
+    }
+
+    return (0);
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main (void)
+{
+	int i,o,r,t,z;
+	float g;
+	
+	printf("Digite o seu salário :")
+	scanf("%i",&i);
+	printf(" Digite o seu tempo de casa em anos e coloque um ponto e o numero de meses : ");
+	scanf("%f",&g);
+	
+	if (g>15.0){
+	    printf("Para informar o seu sexo coloque 1 para masculino e 2 para feminino ");
+	    scanf("%i",o);}
+	    r=i/10;
+	    t=r/2;
+	    
+	    if ((g>15.0)&&(o==1)){
+	    printf("O seu bônus de natal é de : %i",r+t);}
+	    else if ((g>15.0)&&(o==2)){
+	        printf(" O seu bônus de natal é de : %i",(r*2)+t);
+	    }
+	    else if ((g>=10.0)&&(g<15.0)){
+	    printf(" O seu bônus de natal é de : %i",(r*2)+t);}
+	    
+	    else
+	    printf("O seu bônus de natal é de 500 reais");
+	    return(0);
+}

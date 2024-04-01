@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[5][5],r,i,B[5],C[5];
+    for(i=0;i<4;i++){
+     B[i]= 0;
+     C[i]= 0;
+      }
+    for(r=0; r<2; r++){
+        for(i=0; i<2; i++){
+         printf("Digite o valor da linha %i coluna %i : ",r+1,i+1);
+         scanf("%i",&A[r][i]);
+         B[r]+=A[r][i];
+         C[i]+=A[r][i];
+        }
+    }
+  
+    for(r=0; r<2; r++){
+    for(i=0; i<2; i++){
+    printf("O valor da linha %i coluna %i : %i \n",r+1,i+1,A[r][i]);
+    }
+    }
+    for(r=0; r<2; r++){
+        printf("O valor da soma da linha %i : %i \n",r+1,B[r]);
+    }
+    for(r=0; r<2; r++){
+        printf("O valor da soma da coluna %i : %i\n",r+1,C[r]);
+    }
+   return(0);
+}

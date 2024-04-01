@@ -1,0 +1,40 @@
+struct triste {
+float a[10],b[10],c[10],delta[10],x1[10],x2[10];
+};
+
+#include <stdio.h>
+
+int main()
+{
+    struct triste sla;
+    int i;
+     printf("Sendo a equação de segundo grau ax^2+bx+c=0\n");
+    for(i=0; i<10; i++){
+    printf("Digite o valor de a (x^2):\n");
+    scanf("%f",&sla.a[i]);
+    printf("Digite o valor de b (x):\n");
+    scanf("%f",&sla.b[i]);
+    printf("Digite o valor de c: \n");
+    scanf("%f",&sla.c[i]);
+    }
+    for(i=0; i<10; i++){
+     printf("Temos: %.2fx^2+%.2fx+%.2f=0 \n",sla.a[i],sla.b[i],sla.c[i]);
+    }
+    for(i=0; i<10; i++){
+    sla.delta=(sla.b[i]*sla.b[i])+(-4*sla.a[i]*sla.c[i]);    
+    }
+    for(i=0; i<10; i++){
+    printf("\nO delta da %iº equação é: %.2f",i+1,sla.delta);
+    sla.x1[i]= (-sla.b[i]+sqrt(sla.delta[i]))/(2*sla.a[i]);
+    sla.x2[i]= (-sla.b[i]-sqrt(sla.delta[i]))/(2*sla.a[i]);
+    }
+    for(i=0; i<10; i++){
+        if(sla.delta>=0){
+         printf("A primeira raiz da %iº equação é : %.2f",sla.x1);
+         printf("A segunda raiz da %iº equação é : %.2f",sla.x2);}
+         else{
+             printf("Não possui raizes reais");
+         }
+    }
+    return 0;
+}

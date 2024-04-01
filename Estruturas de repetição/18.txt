@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o,A[9999],maior;
+    printf("Digite quantos números irá querer na lista : ");
+    scanf("%i",&i);
+    
+    printf("Digite o 1º número da lista, todos devem ser positivos : ");
+    scanf("%i",&A[0]);
+    if(A[0]<0){
+        printf("Digite o 1º número da lista, todos devem ser positivos : ");
+        scanf("%i",&A[0]);
+    }
+    maior=A[0];
+    for(g=1; g<i; g++){
+        printf("Digite o %iº número da lista, todos devem ser positivos : ",g+1);
+        scanf("%i",&A[g]);
+        if(A[g]<0){
+        printf("Digite o %iº número da lista, todos devem ser positivos : ",g+1);
+        scanf("%i",&A[g]);
+        }
+        if(A[g]>maior){
+            maior=A[g];
+        }
+    }
+    printf("O maior número da lista é : %i",maior);
+
+    return(0);
+}

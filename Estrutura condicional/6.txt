@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+int nota1,nota2,nota3,soma,media;
+
+printf(" Digite as 3 notas:\n");
+
+scanf ("%i %i %i", &nota1,&nota2,&nota3);
+
+soma= nota1+nota2+nota3;
+
+media= soma/3;
+
+if (media >=7)
+
+printf("Aprovado, deu sorte");
+
+else
+
+printf("Prova Final, se fodeu");
+
+return
+(0);
+
+
+}

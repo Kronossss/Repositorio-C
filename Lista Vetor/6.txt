@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[10],B[10],C[10],i;
+    for (i=0; i<10; i++){
+    printf("Digite o %iº número do vetor A : ",i+1);
+    scanf("%i",&A[i]);
+    printf("Digite o %iº número do vetor B : ",i+1);
+    scanf("%i",&B[i]);
+    C[i]=A[i]*B[i];
+    }
+    for (i=0; i<10; i++){
+       printf("%iº valor do vetor C : %i \n",i+1,C[i]);
+    }
+    return (0);
+}

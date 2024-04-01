@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[4][6],B[4][6],C[4][6],D[4][6],r,t;
+    for(r=0; r<4; r++){
+    for(t=0; t<6; t++){
+    printf("Digite o valor da linha %i coluna %i do vetor A : ",r+1,t+1);
+    scanf("%i",&A[r][t]);
+    printf("Digite o valor da linha %i coluna %i do vetor B : ",r+1,t+1);
+    scanf("%i",&B[r][t]);
+    C[r][t]=A[r][t]+B[r][t];
+    D[r][t]=A[r][t]-B[r][t];
+    }
+    }
+    for(r=0; r<4; r++){
+    for(t=0; t<6; t++){
+    printf("Valor da linha %i coluna %i apC3s soma :%i \n",r+1,t+1,C[r][t]);
+    }
+    }
+    for(r=0; r<4; r++){
+    for(t=0; t<6; t++){
+    printf("Valor da linha %i coluna %i apC3s subtraC'C#o :%i \n",r+1,t+1,D[r][t]);
+    }
+    }
+    
+    return (0);
+}

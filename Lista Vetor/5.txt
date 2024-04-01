@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int A[1000],i,g,o;
+    printf("Digite o número inicial : ");
+    scanf("%i",&g);
+    printf("Digite a razão : ");
+    scanf("%i",&o);
+    A[0]=g+o;
+    for (i=1; i<1000; i++){
+       A[i]=A[i-1]+o;
+    }
+    for (i=0; i<1000; i++){
+       printf("%iº valor da pa : %i \n",i+1,A[i]);
+    }
+    return (0);
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    for(x=1000; x<=1500; x++)
+    printf(" %i ",x);
+
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int i,g,o,r;
+    printf("Digite o valor da base : ");
+    scanf("%i",&i);
+    printf("Digite o valor do expoente : ");
+    scanf("%i",&g);
+    r=pow(i,g);
+  printf("Esse é o resultado : %i",r);
+    return (0);
+}

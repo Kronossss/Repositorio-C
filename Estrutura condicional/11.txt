@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+float i,g,o,r;
+printf("Digite a sua renda mensal :    ");
+scanf("%f", &i);
+g=i*13.0;
+o=g/10.0;
+r=o*2.0;
+if(i>23750.00){
+    printf("Voce deve fazer a declaracao de renda, o imposto a ser pago C) de %.2f reais ",r);}
+    else
+    printf("Voce nao precisa fazer a declaracao de renda.");
+    return(0);
+}

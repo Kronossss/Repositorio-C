@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o;
+    printf("Digite um número : ");
+    scanf("%i",&i);
+    i=(i*2);
+    i-=2;
+    for(g=i; g>=0; g-=2){
+    o+=g;
+   printf("%i ",g);    
+    }
+    
+    return (0);
+}

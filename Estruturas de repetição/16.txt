@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,g,o,A[9999];
+    o=0;
+    printf("Digite quantos números você irá querer na lista : ");
+    scanf("%i",&i);
+    for(g=0; g<i; g++){
+    printf("Digite o %iº número da lista : ",g+1);
+    scanf("%i",&A[g]);
+    o+=A[g];}
+    printf("Essa é a soma dos números da lista : %i",o);
+    return(0);
+}
